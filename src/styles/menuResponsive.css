@@ -1,0 +1,45 @@
+@media screen and (max-width: 500px) {
+    #header-pc {
+        display: none;
+    }
+    #header-phone {
+        display: grid;
+        grid-template-columns: auto auto; 
+        background-color: #0066d0;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu-vertical li a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 10px 1px 10px 10px;
+        margin-top:20px;
+    }
+    .HabLg {
+        padding-top: 5vh;
+    }
+    .gUIAOE {
+        color: #ffff;
+        font-family: Helvetica;
+        text-decoration: none;
+    }
+}
+@media screen and (min-width: 501px) {
+    #header-phone {
+        display: none;
+    }
+    #header-pc {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        background-color: #0066d0;
+        width: 800px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
