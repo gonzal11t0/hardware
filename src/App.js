@@ -28,7 +28,6 @@ import Home from './Pages/Home';
 import Footer from '../src/Component/Footer';
 import ContrastOutlinedIcon from '@mui/icons-material/ContrastOutlined';
 import './styles/style.css';
-import Carrusel from './Component/Carrusel';
 
 function App() {
   const storeDark = JSON.parse(localStorage.getItem("darkMode")) || false;
@@ -53,10 +52,8 @@ function App() {
             <ContrastOutlinedIcon />
           </button>
         </div>
-        <Carrusel/>
         <Router>
           <Menu />
-
           <Routes>
             <Route path="/" element={<Navigate to="/Home" />} />
             <Route path="/Home" element={<Home />} />

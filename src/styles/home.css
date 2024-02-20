@@ -1,11 +1,20 @@
-.container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:10px;
     justify-content: center;
-    width: 800px;
-    height: auto;
-    margin: 0 auto;
-    margin-top:35vh;
+    margin-top:24vh;
+}
+.css-h93ljk-MuiTypography-root {
+    font-size:1rem !important;
+}
+.css-r3c3yz-MuiPaper-root-MuiCard-root:hover {
+    /*background-color: #000000;
+    color: #ffff !important;
+    */box-shadow: 10px 12px 11px 10px rgba(197, 9, 9, 0);
+    transition:4s;
+    -webkit-transition:4s;
+    -moz-transition:4s;
+    -ms-transition:4s;
+    -o-transition:4s;
 }

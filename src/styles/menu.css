@@ -14,6 +14,7 @@ body{
     margin-left:2px;
 	color: white;
 	text-decoration: none;
+	z-index: 50;
 }
 .menu-horizontal > li:hover{
 	background-color:#06521e;

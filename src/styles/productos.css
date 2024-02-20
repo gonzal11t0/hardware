@@ -1,7 +1,81 @@
+img{
+    width: 100% !important;
+    height:200px !important;
+    object-fit:cover !important;
+
+}
 img:hover{
     transform: (1);
     -webkit-transform: (1);
     -moz-transform: (1);
     -ms-transform: (1);
     -o-transform: (1);
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:10px;
+    justify-content: center;
+    margin-top:24vh;
+}
+.css-h93ljk-MuiTypography-root {
+    font-size:1rem !important;
+}
+.css-r3c3yz-MuiPaper-root-MuiCard-root:hover {
+    background-color: #000000;
+    color: #ffff !important;
+    box-shadow: 10px 12px 11px 10px rgba(197, 9, 9, 0);
+    transition:4s;
+    -webkit-transition:4s;
+    -moz-transition:4s;
+    -ms-transition:4s;
+    -o-transition:4s;
+}
+.descripcion-modal Button {
+    background-color: rgb(5, 226, 90);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.descripcion-modal input[type="number"] {
+    width: 50px;
+    text-align: center;
+    margin: 0 5px;
+    background-color: #000000;
+}
+
+/* Estilo para botón Pagar en el modal */
+.pago button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Estilo para botón Carrito en el modal */
+.carrito button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Estilo para el icono de carrito */
+.ShoppingCartIcon {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.ShoppingCartIcon:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo para los productos en la grid */
+.grid-container .MuiPaper-root:hover {
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
 }
