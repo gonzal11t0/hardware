@@ -2,7 +2,7 @@
   "name": "e-commerce",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/gonzal11t0/E-commerce",
+  "homepage": "https://gonzal11t0.github.io/E-commerce",
   "dependencies": {
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
