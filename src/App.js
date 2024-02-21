@@ -58,6 +58,7 @@ function App() {
           <Menu />
           <Routes>
             <Route path="/" element={<Navigate to="/Home" />} />
+            <Route path="/" element={<Home />} />
             <Route path="/Notebook" element={<Notebook />} />
             <Route path="/Pcs" element={<Pcs />} />
             <Route path="/Celulares" element={<Celulares />} />
