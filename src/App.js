@@ -11,7 +11,6 @@ import Componentes from './Pages/Componentes/Componentes';
 import Mother from './Pages/Componentes/Mother';
 import Pendrive from './Pages/Componentes/Pendrive';
 import Gabinetes from './Pages/Componentes/Gabinetes';
-import Almacenamientos from './Pages/Componentes/Almacenamientos';
 import Perisfericos from './Pages/Perisfericos/Perisfericos';
 import MouseTecladosPad from './Pages/Perisfericos/MouseTecladosPad';
 import Audios from './Pages/Perisfericos/Audios';
@@ -71,7 +70,6 @@ function App() {
             <Route path="/Mother" element={<Mother />} />
             <Route path="/Pendrive" element={<Pendrive />} />
             <Route path="/Gabinetes" element={<Gabinetes />} />
-            <Route path="/Almacenamientos" element={<Almacenamientos />} />
             <Route path="/Perisfericos" element={<Perisfericos />} />
             <Route path="/MouseTecladosPad" element={<MouseTecladosPad />} />
             <Route path="/Audios" element={<Audios />} />

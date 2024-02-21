@@ -137,9 +137,6 @@ const Menu = () => {
                 <SubLi>
                   <StyledLink aria-controls="panel9-content" to={'/Gabinetes'}>Gabinetes</StyledLink>
                 </SubLi>
-                <SubLi>
-                  <StyledLink aria-controls="panel10-content" to={'/Almacenamientos'}>Alamacenamientos</StyledLink>
-                </SubLi>
               </MenuVertical>
             </Li>
             <Li>
@@ -224,9 +221,6 @@ const Menu = () => {
                 </SubLi>
                 <SubLi>
                   <StyledLink aria-controls="panel9-content" to={'/Gabinetes'}>Gabinetes</StyledLink>
-                </SubLi>
-                <SubLi>
-                  <StyledLink aria-controls="panel10-content" to={'/Almacenamientos'}>Alamacenamientos</StyledLink>
                 </SubLi>
               </MenuVertical>
             </Li>
