@@ -7,7 +7,6 @@
     color: #FFFF;
     width: 50%;
 }
-
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -40,28 +39,23 @@
     padding-left: 4%;
     padding-right: 4%;
 }
-
-
 .container-carrito {
     padding:5px;
     background-color: rgb(1, 63, 63);
     color: #FFFF;
     
 }
-
 table {
     width:800px;
     border-collapse: collapse;
     margin: 0 auto;
     margin-top: 10vh;
 }
-
 th, td {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
 }
-
 th {
     background-color: #333333;
     color: #ffffff;
@@ -74,15 +68,12 @@ td{
     width: 50px;
     height: auto;
 }
-
 h2 {
     margin-top: 0;
 }
-
 .total {
     font-weight: bold;
 }
-
 .carrito-buttons {
     text-align: right;
 }
@@ -102,4 +93,27 @@ h2 {
 }
 td input[type="number"]{
     width:40px;
+}
+.promociones-bancarias{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    margin: 0 auto;
+}
+.promociones-bancarias-titulo,.promociones-bancarias-img{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    margin: 0 auto;
+}
+.promociones-bancarias span{
+    color: #dddddd;
+    float: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.promociones-bancarias img{
+    width:80%;
+    height:60px;
 }

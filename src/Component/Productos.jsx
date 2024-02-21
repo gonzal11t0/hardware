@@ -7,6 +7,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import '../styles/modal.css';
+import mediosPagos from "../img/promociones/mediosPagos.png";
 
 const Productos = ({ productos, agregarAlCarrito }) => {
     const [hoverIndex, setHoverIndex] = useState(null);
@@ -141,6 +142,14 @@ const Productos = ({ productos, agregarAlCarrito }) => {
                                 <p>En 3 cuotas fijas de $ {calcular3Cuotas(selectedProduct)}</p>
                                 <p>En 6 cuotas fijas de $ {calcular6Cuotas(selectedProduct)}</p>
                                 <p>* El valor de las cuotas es de referencia sujeto a redondeo.</p>
+                            </div>
+                            <div className='promociones-bancarias'>
+                                <div className='promociones-bancarias-titulo'>
+                                    <span>Medios de pagos</span>
+                                </div><br/>
+                                <div className='promociones-bancarias-img'>
+                                    <img src={mediosPagos} alt='img1'></img>
+                                </div>
                             </div>
                         </div>
                     </div>

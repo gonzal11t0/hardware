@@ -5,6 +5,7 @@ import Carusel from "../Component/Carusel";
 import Carrito from "../Component/Carrito";
 import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
+
 import carusel1 from "../img/carusel1/carrusel1.png";
 import carusel2 from "../img//carusel1/carrusel2.png";
 import carusel3 from "../img//carusel1/carrusel3.png";
@@ -12,13 +13,17 @@ import carusel3 from "../img//carusel1/carrusel3.png";
 import img1 from "../img//carusel2/carrusel1.png";
 import img2 from "../img//carusel2/carrusel2.png";
 
+
 import Whatshapp from "../Component/Watshapp";
 import ToUp from '../Component/ToUp';
+
+
 const Home=()=>{
 
     const [carrito, setCarrito] = useState([]); 
     const imagenes = [ carusel1, carusel2, carusel3];
     const otrasImagenes = [ img1,img2];
+
 
     const agregarAlCarrito = (producto) => {
         const productoExistente = carrito.find(item => item.nombre === producto.nombre);

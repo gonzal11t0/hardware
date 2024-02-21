@@ -176,9 +176,6 @@ const Menu = () => {
                 </SubLi>
               </MenuVertical>
             </Li>
-            <Li>
-              <StyledLink aria-controls="panel21-content" to={'/Promociones'}>Promociones</StyledLink>
-            </Li>
           </Ul>
         </nav>
       </Header>
@@ -266,9 +263,6 @@ const Menu = () => {
                   <StyledLink aria-controls="panel20-content" to={'/Cables'}>Cables/Adaptadores</StyledLink>
                 </SubLi>
               </MenuVertical>
-            </Li>
-            <Li>
-              <StyledLink aria-controls="panel21-content" to={'/Promociones'}>Promociones</StyledLink>
             </Li>
           </Ul>
         </MenuContainer>

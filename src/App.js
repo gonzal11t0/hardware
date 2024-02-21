@@ -22,12 +22,12 @@ import Conectividad from './Pages/Conectividad/Conectividad';
 import RedesInternet from './Pages/Conectividad/RedesInternet';
 import Interfaces from './Pages/Conectividad/Interfaces';
 import Cables from './Pages/Conectividad/Cables';
-import Promociones from './Pages/Promociones/Promociones';
 import Menu from './Component/Menu';
 import Home from './Pages/Home';
 import Footer from '../src/Component/Footer';
 import ContrastOutlinedIcon from '@mui/icons-material/ContrastOutlined';
 import './styles/style.css';
+import Search from './Component/Search';
 
 function App() {
   const storeDark = JSON.parse(localStorage.getItem("darkMode")) || false;
@@ -51,6 +51,9 @@ function App() {
           <button onClick={toggleDarkMode}>
             <ContrastOutlinedIcon />
           </button>
+        </div>
+        <div className='container-search'>
+          <Search/>
         </div>
         <Router>
           <Menu />
@@ -79,7 +82,6 @@ function App() {
             <Route path="/RedesInternet" element={<RedesInternet />} />
             <Route path="/Interfaces" element={<Interfaces />} />
             <Route path="/Cables" element={<Cables />} />
-            <Route path="/Promociones" element={<Promociones />} />
           </Routes>
         </Router>
         <Footer />
