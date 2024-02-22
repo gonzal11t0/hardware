@@ -57,8 +57,7 @@ function App() {
         <Router>
           <Menu />
           <Routes>
-            <Route path="/" element={<Navigate to="/Home" />} />
-            <Route path="/Home" element={<Home/>} />
+            <Route path="/Home" element={<Home />} />
             <Route path="/Notebook" element={<Notebook />} />
             <Route path="/Pcs" element={<Pcs />} />
             <Route path="/Celulares" element={<Celulares />} />
