@@ -7,6 +7,7 @@ import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import Whatshapp from "../../Component/Watshapp";
 import ToUp from '../../Component/ToUp';
+
 const Celulares =()=>{
     const [carrito, setCarrito] = useState([]);
 
