@@ -1,10 +1,18 @@
 import '../styles/home.css'
+
 import Productos from '../Component/Productos';
-import Img from "../img/img.json";
-import Carusel from "../Component/Carusel";
+
 import Carrito from "../Component/Carrito";
+
+import Pagos from '../Component/Pagos';
+
 import { useState } from 'react';
+
 import { v4 as uuidv4 } from 'uuid';
+
+import Img from "../img/img.json";
+
+import Carusel from "../Component/Carusel";
 
 import carusel1 from "../img/carusel1/carrusel1.png";
 import carusel2 from "../img//carusel1/carrusel2.png";
@@ -20,7 +28,8 @@ import ToUp from '../Component/ToUp';
 
 const Home=()=>{
 
-    const [carrito, setCarrito] = useState([]); 
+    const [carrito, setCarrito] = useState([]);
+    const [mostrarPasarela,setMostrarPasarela] = useState(false); 
     const imagenes = [ carusel1, carusel2, carusel3];
     const otrasImagenes = [ img1,img2];
 
@@ -56,7 +65,11 @@ const Home=()=>{
     };
 
     const handlePagar = () => {
-        handlePagar();
+        setMostrarPasarela(true); 
+    };
+
+    const cerrar = () => {
+        setMostrarPasarela(false); 
     };
 
     const productos=[
@@ -78,8 +91,11 @@ const Home=()=>{
                 carrito={carrito}
                 eliminarProducto={eliminarProducto}
                 cambiarCantidad={cambiarCantidad}
-                handlePagar={handlePagar}            
+                handlePagar={handlePagar}          
+                mostrarPasarela={mostrarPasarela}
+                cerrar={cerrar}
             />
+            {mostrarPasarela && <Pagos cerrar={cerrar} />}
             <div className='container'>
                 <Productos productos={productos} agregarAlCarrito={agregarAlCarrito}/>
             </div>

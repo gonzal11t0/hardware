@@ -2,6 +2,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import XIcon from '@mui/icons-material/Close'; // Importa el ícono Close
 import AddLocationAltIcon from '@mui/icons-material/AddLocationAlt';
 import  '../styles/footer.css'
+import  '../styles/mediaFooter.css'
 
 const Footer=()=>{
     return(

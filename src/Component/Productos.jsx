@@ -70,7 +70,7 @@ const Productos = ({ productos, agregarAlCarrito }) => {
                     onMouseLeave={() => setHoverIndex(null)}
                 >
                     {hoverIndex === index && (
-                        <Button
+                        <Button className='Button'
                             sx={{
                                 position: 'absolute',
                                 top: '53%',

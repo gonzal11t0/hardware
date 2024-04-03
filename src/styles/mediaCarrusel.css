@@ -1,0 +1,16 @@
+.h-200{
+    height:240px !important;
+}
+.w-100{
+    width: 100% !important;
+}
+@media screen and (min-width:1200px){
+    .h-200{
+        height:330px !important;
+    }
+}
+@media screen and (min-width:401px) and (max-width:600px) {
+    .h-200{
+        height:140px !important;
+    }
+}

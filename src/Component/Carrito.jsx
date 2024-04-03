@@ -3,8 +3,10 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import Modal from '@mui/material/Modal';
 import Button from '@mui/material/Button';
 import '../styles/modal.css';
+import Pagos from '../Component/Pagos';
+import '../styles/iconCarrito.css';
 
-const Carrito = ({ carrito, pagar, eliminarProducto, cambiarCantidad }) => {
+const Carrito = ({ carrito, handlePagar, eliminarProducto, cambiarCantidad,mostrarPasarela, cerrar  }) => {
     const [mostrarCarrito, setMostrarCarrito] = useState(false);
 
     const toggleCarrito = () => {
@@ -36,12 +38,12 @@ const Carrito = ({ carrito, pagar, eliminarProducto, cambiarCantidad }) => {
     
     return (
         <div>
-            <div style={{ float: "left", top: "72vh", position: "fixed", marginLeft: "10vw" }} onClick={toggleCarrito}>
-                <ShoppingCartIcon />
+            <div className='container-iconcarrito' onClick={toggleCarrito}>
+                <ShoppingCartIcon className="carrito-icon" />
                 {carrito.length > 0 && <span>{carrito.length}</span>}
             </div>
             {mostrarCarrito && (
-                <section className='section'>
+                <section>
                     <Modal
                         open={mostrarCarrito}
                         onClose={toggleCarrito}
@@ -78,15 +80,18 @@ const Carrito = ({ carrito, pagar, eliminarProducto, cambiarCantidad }) => {
                             </table>
                             <div className='pagos'>
                                 <Button onClick={toggleCarrito}>Cerrar Carrito</Button>
-                                <tfoot>
-                                    <tr>
-                                        <td colSpan="4">Total:</td>
-                                        <td>{calcularTotalCarrito()}k</td>
-                                        <td></td>
-                                    </tr>
-                                </tfoot>
-                                <Button onClick={pagar}>Ir a Pagar</Button>
+                                <table>
+                                    <tfoot>
+                                        <tr>
+                                            <td colSpan="4">Total:</td>
+                                            <td>{calcularTotalCarrito()}k</td>
+                                            <td></td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                                <Button onClick={handlePagar}>Ir a Pagar</Button>
                             </div>
+                            {mostrarPasarela && <Pagos cerrar={cerrar} TotalCarrito={calcularTotalCarrito()} />}
                         </div>
                     </Modal>
                 </section>

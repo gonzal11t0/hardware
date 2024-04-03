@@ -2,11 +2,13 @@ body{
     padding: 0;
     margin: 0;
 }
+
 .menu-horizontal{
     list-style:none;
 	display: flex;
 	justify-content:space-around;
     margin: 0 auto;
+	overflow-x: hidden;
 }
 .menu-horizontal > li > a{
 	display: block;
@@ -34,6 +36,4 @@ body{
 .menu-vertical li a:hover{
     background-color:#024b1c;
 }
-.header-phone{
-	display: none;
-}
+

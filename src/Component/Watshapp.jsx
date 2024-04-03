@@ -1,9 +1,14 @@
 import { ImWhatsapp } from "react-icons/im";
-const watshapp=()=>{
-    return(
+import '../styles/whatsapp.css';
+
+const Whatsapp = () => {
+    return (
         <div>
-            <a target="_blank" href="https://web.whatsapp.com/send?l=es&amp;phone=5491151364852&amp;text=" rel="noopener noreferrer"><ImWhatsapp style={{color: "green", float: "left", top: "72vh", position: "fixed", marginLeft: "5vw", fontSize:"2rem"}} /></a>
+            <a target="_blank" href="https://web.whatsapp.com/send?l=es&amp;phone=5491151364852&amp;text=" rel="noopener noreferrer">
+                <ImWhatsapp className="whatsapp-icon" />
+            </a>
         </div>
-    )
+    );
 };
-export default watshapp;
+
+export default Whatsapp;

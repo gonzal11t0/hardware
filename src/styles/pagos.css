@@ -1,0 +1,67 @@
+.container-pagos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width:800px;
+    z-index:900px ;
+    overflow-y:auto;
+    position: relative;
+    margin-bottom: 20vh !important;
+}
+.p-3 h1 {
+    font-size: 2.1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+input{
+    margin-top:10px;
+    margin-bottom: 10px ;
+}
+input[type='text'],
+input[type='email'],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 5px solid #025e5e;
+    border-radius: 10px;
+    background-color: #025e5e;
+    color:#fff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0 auto;
+}
+input[type='text']:focus,
+input[type='email']:focus,
+input textarea,
+select:focus {
+    outline: none;
+    border-color: #fcfffd; 
+}
+input,textarea::placeholder{
+    text-align: center;
+}
+
+option {
+    background-color: #fff; 
+    color: #000; 
+}
+textarea{
+    resize: none;
+}
+option:hover {
+    background-color: #007bff;
+    color: #fff; 
+}
+.formulario-productos-pagos form select {
+    width: 200px; 
+    margin: 10px auto;
+    padding: 10px;
+}

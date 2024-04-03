@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import '../styles/Carrusel.css';
+import '../styles/mediaCarrusel.css';
 
 const Carusel = ({ imagenes }) => {
     const [activeIndex, setActiveIndex] = useState(0);

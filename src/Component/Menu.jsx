@@ -69,18 +69,7 @@ const SubLi = styled.li`
   }
 `;
 
-const MenuContainer = styled.nav`
-  display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
-  grid-column: 1 / -1; /* Ocupa las dos columnas */
-`;
-const MenuButton = styled.button`
-background: none;
-border: none;
-color: white;
-font-size: 1.2rem;
-cursor: pointer;
-grid-column: 2; /* Se coloca en la segunda columna */
-`;
+
 
 const Menu = () => {
 
@@ -93,7 +82,7 @@ const Menu = () => {
 
   return (
     <>
-      <Header role="navigation" id='header-pc'>
+      <Header role="navigation">
         <nav aria-label="Menu de la pagina con Home,Tecnologia,Notebook,Pcs,Celulares,Monitores,Camaras Digitales, Parlantes, SmartWatch">
           <Ul className="menu-horizontal">
             <Li>
@@ -127,7 +116,7 @@ const Menu = () => {
             </Li>
             <Li>
               <StyledLink aria-controls="panel6-content" to={'/Componentes'}>Componentes</StyledLink>
-              <MenuVertical>
+              <MenuVertical >
                 <SubLi>
                   <StyledLink aria-controls="panel7-content" to={'/Mother'}>Micros/Mother</StyledLink>
                 </SubLi>
@@ -176,92 +165,6 @@ const Menu = () => {
           </Ul>
         </nav>
       </Header>
-      <Header className='header' role="navigation" id='header-phone'>
-      <div>
-        <MenuButton onClick={toggleMenu}>☰</MenuButton>
-        <MenuContainer isOpen={isOpen}>
-        <Ul className="menu-horizontal">
-            <Li>
-              <StyledLink aria-controls="panel1-content" to={'/Home'}>Home</StyledLink>
-            </Li>
-            <Li>
-              <StyledLink to={'/Tecnologia'}>Tecnologia</StyledLink>
-              <MenuVertical>
-                <SubLi>
-                  <StyledLink aria-controls="panel2-content" to={'/Notebook'}>Notebook</StyledLink>
-                </SubLi>
-                <SubLi>
-                  <StyledLink to={'/Pcs'}>Pcs</StyledLink>
-                </SubLi>
-                <SubLi>
-                  <StyledLink to={'/Celulares'}>Celulares</StyledLink>
-                </SubLi>
-                <SubLi>
-                  <StyledLink to={'/Monitores'}>Monitores</StyledLink>
-                </SubLi>
-                <SubLi>
-                  <StyledLink aria-controls="panel3-content" to={'/CamarasDigitales'}>Camaras digitales</StyledLink>
-                </SubLi>
-                <SubLi>
-                  <StyledLink aria-controls="panel4-content" to={'/Parlantes'}>Parlantes</StyledLink>
-                </SubLi>
-                <SubLi>
-                  <StyledLink aria-controls="panel5-content" to={'/Smartwatch'}>SmartWatch</StyledLink>
-                </SubLi>
-              </MenuVertical>
-            </Li>
-            <Li>
-              <StyledLink aria-controls="panel6-content" to={'/Componentes'}>Componentes</StyledLink>
-              <MenuVertical>
-                <SubLi>
-                  <StyledLink aria-controls="panel7-content" to={'/Mother'}>Micros/Mother</StyledLink>
-                </SubLi>
-                <SubLi>
-                  <StyledLink aria-controls="panel8-content" to={'/Pendrive'}>Pendrive/Tarjestas memoria</StyledLink>
-                </SubLi>
-                <SubLi>
-                  <StyledLink aria-controls="panel9-content" to={'/Gabinetes'}>Gabinetes</StyledLink>
-                </SubLi>
-              </MenuVertical>
-            </Li>
-            <Li>
-              <StyledLink aria-controls="panel11-content" to={'Perisfericos'}>Perisfericos</StyledLink>
-              <MenuVertical>
-                <SubLi>
-                  <StyledLink aria-controls="panel12-content" to={'/MouseTeclados/Pad'}>Mouse/Teclados/Pad</StyledLink>
-                </SubLi>
-                <SubLi>
-                  <StyledLink aria-controls="panel13-content" to={'/Audios'}>Audios</StyledLink>
-                </SubLi>
-                <SubLi>
-                  <StyledLink aria-controls="panel14-content" to={'/Gaming'}>Gaming</StyledLink>
-                </SubLi>
-                <SubLi>
-                  <StyledLink aria-controls="panel15-content" to={'/Energia'}>Energia/Fuentes</StyledLink>
-                </SubLi>
-                <SubLi>
-                  <StyledLink aria-controls="panel16-content" to={'/Auriculares'}>Auriculares</StyledLink>
-                </SubLi>
-              </MenuVertical>
-            </Li>
-            <Li>
-              <StyledLink aria-controls="panel17-content" to={'/Conectividad'}>Conectividad</StyledLink>
-              <MenuVertical>
-                <SubLi>
-                  <StyledLink aria-controls="panel18-content" to={'/RedesInternet'}>Redes/Internet</StyledLink>
-                </SubLi>
-                <SubLi>
-                  <StyledLink aria-controls="panel19-content" to={'/Interfaces'}>Interfaces</StyledLink>
-                </SubLi>
-                <SubLi>
-                  <StyledLink aria-controls="panel20-content" to={'/Cables'}>Cables/Adaptadores</StyledLink>
-                </SubLi>
-              </MenuVertical>
-            </Li>
-          </Ul>
-        </MenuContainer>
-      </div>
-    </Header>
     </>
   );
 };

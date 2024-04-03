@@ -1,9 +1,9 @@
 .Modal-body {
     padding: 10px;
     background-color: rgb(24, 26, 26);
-    height: auto;
+    overflow-y:auto;
     margin: 0 auto;
-    margin-top: 20vh;
+    margin-top: 1vh;
     color: #FFFF;
     width: 50%;
 }
@@ -40,10 +40,12 @@
     padding-right: 4%;
 }
 .container-carrito {
-    padding:5px;
     background-color: rgb(1, 63, 63);
     color: #FFFF;
-    
+    top:0vh !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 auto !important;
 }
 table {
     width:800px;
@@ -83,7 +85,6 @@ h2 {
     align-items: center;
     justify-content: center;
     width: 800px;
-    height: auto;
     margin: 0 auto;
     margin-top:5vh;
     margin-bottom:5vh;
@@ -116,4 +117,58 @@ td input[type="number"]{
 .promociones-bancarias img{
     width:80%;
     height:60px;
+}
+@media screen and (max-width:800px) {
+    .container-carrito {
+        width:100% !important;
+        height: 100% !important;
+    }
+    table {
+        width:500px;
+    }
+    th, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding:4px;
+    }
+    th {
+        font-size:0.8rem;
+    }
+    td{
+        font-size:0.7rem;
+    }
+    .pagos{
+        width:600px;
+    }
+    .pagos button{
+        padding: 0px 120px 0px 120px !important;
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (min-width:250px) and (max-width:500px) {
+    table {
+        width:250px;
+    }
+    table td:nth-child(2),table td:nth-child(3){
+        display: none;
+    }
+    th, td {
+        border:2px solid #dddddd;
+        text-align: left;
+        padding:2px;
+    }
+    th {
+        font-size:0.8rem;
+    }
+    td{
+        font-size:0.6rem;
+    }
+    .pagos{
+        width:250px;
+    }
+    .pagos button{
+        padding: 0px 60px 0px 60px !important;
+        font-size:0.6rem;
+    }
 }

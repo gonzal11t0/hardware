@@ -1,0 +1,39 @@
+.whatsapp-icon {
+    color: green;
+    float: left;
+    top:72vh;
+    position: fixed;
+    margin-left: 5vw;
+    font-size:1.2rem;
+    z-index: 800;
+}
+@media screen and (min-width:1200px) {
+    .whatsapp-icon {
+        top:72vh;
+        font-size:1.6rem;
+    }
+}
+@media screen and (max-width:800px) {
+    .whatsapp-icon {
+        top:60vh;
+        position: fixed;
+        margin-left:5vw;
+        font-size:1rem;
+    }
+}
+@media screen and (min-width:401px) and (max-width:600px) {
+    .whatsapp-icon {
+        top:60vh;
+        position: fixed;
+        margin-left:5vw;
+        font-size:1rem;
+    }
+}
+@media screen and (min-width:250px) and (max-width:400px) {
+    .whatsapp-icon {
+        top:60vh;
+        position: fixed;
+        margin-left:5vw;
+        font-size:1rem;
+    }
+}

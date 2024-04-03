@@ -1,0 +1,62 @@
+.container-iconcarrito{
+    float: left; 
+    top:72vh;
+    position:fixed;
+    margin-left:10vw; 
+    z-index: 800 !important;
+    color: black;
+
+}
+.carrito-icon {
+    float: left;
+    top:72vh;
+    position: fixed;
+    margin-left: 5vw;
+    font-size: 2rem;
+    color: black;
+    z-index: 801 !important;
+}
+@media screen and (min-width:1200px) {
+    .container-iconcarrito{
+        top:72vh;
+        margin-left:10vw;
+    }
+    .carrito-icon {
+        top:72vh;
+        font-size:1.6rem;
+    }
+}
+@media screen and (max-width:800px) {
+    .container-iconcarrito{
+        top:60vh;
+        margin-left:25vw;
+    }
+    .carrito-icon {
+        top:60vh;
+        font-size:1.2rem;
+    }
+}
+@media screen and (min-width:401px) and (max-width:600px) {
+    .container-iconcarrito{
+        top:60vh;
+        margin-left:25vw;
+
+    }
+    .carrito-icon {
+        top:60vh;
+        font-size:1.2rem;
+
+    }
+}
+@media screen and (min-width:250px) and (max-width:400px) {
+    .container-iconcarrito{
+        top:60vh;
+        margin-left:25vw;
+
+    }
+    .carrito-icon {
+        top:60vh;
+        font-size:1.2rem;
+
+    }
+}

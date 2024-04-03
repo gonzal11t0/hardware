@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { PiArrowCircleUpDuotone } from "react-icons/pi";
-
+import '../styles/toUp.css';
+import '../styles/mediaToUp.css';
 const ToUp=()=>{
 
     const [showButton, setShowButton] = useState(false);
@@ -25,7 +26,7 @@ const scrollToTop = () => {
 }
     return(
         <div className={`container-button ${showButton ? "show" : ""}`}>
-            <PiArrowCircleUpDuotone onClick={scrollToTop } style={{color: "green",top: "33vh", position: "relative", marginLeft: "90vw", fontSize:"2rem"}} />
+            <PiArrowCircleUpDuotone onClick={scrollToTop } className="toUp"/>
         </div>
     );
 };

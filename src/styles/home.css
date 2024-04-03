@@ -1,5 +1,6 @@
 .grid-container{
     display: grid;
+    margin: 0 auto;
     grid-template-columns: repeat(3, 1fr);
     gap:10px;
     justify-content: center;
@@ -9,12 +10,88 @@
     font-size:1rem !important;
 }
 .css-r3c3yz-MuiPaper-root-MuiCard-root:hover {
-    /*background-color: #000000;
-    color: #ffff !important;
-    */box-shadow: 10px 12px 11px 10px rgba(197, 9, 9, 0);
+    box-shadow: 10px 12px 11px 10px rgba(197, 9, 9, 0);
     transition:4s;
     -webkit-transition:4s;
     -moz-transition:4s;
     -ms-transition:4s;
     -o-transition:4s;
+}
+@media screen and (min-width: 1500px){
+    .grid-container {
+        width:100% !important;
+        grid-template-columns:repeat(4,1fr) !important;
+        padding-left:6vw;
+    }
+}
+@media screen and (min-width: 1200px)and (max-width: 1499px){
+    .grid-container {
+        width:100% !important;
+        grid-template-columns:repeat(3,1fr) !important;
+        padding-left:6vw;
+    }
+}
+@media screen and (max-width: 721px) {
+    .css-rnlv0n-MuiTypography-root {
+        font-weight:300;
+        font-size: 0.7rem !important;
+        margin-right:5px !important;
+    }
+    .css-1kivl2a-MuiTypography-root {
+        font-weight:300;
+        font-size:0.8rem !important;
+        margin-right:10px !important;
+    }
+}
+@media screen and (min-width:401px) and (max-width:600px) {
+    .grid-container {
+        width:401px !important;
+        grid-template-columns:repeat(2,0.8fr) !important;
+        margin: 0 auto !important;
+        margin-top: 15vh !important;
+    }
+    .css-10a3tap-MuiCardMedia-root {
+        width:90% !important;
+    }
+    .css-rnlv0n-MuiTypography-root {
+        font-weight:200;
+        font-size: 0.6rem !important;
+        margin-right:5px !important;
+    }
+    .css-1kivl2a-MuiTypography-root {
+        font-weight:200;
+        font-size:0.7rem !important;
+        margin-right:10px !important;
+    }
+    .css-6hpehn-MuiButtonBase-root-MuiButton-root {
+        top: 52% !important;
+        left:50% !important;;
+    }
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        --bs-gutter-x:0rem; 
+
+    }
+}
+@media screen and (min-width: 250px) and (max-width: 400px) {
+    .grid-container {
+        width:280px !important;
+        grid-template-columns: repeat(1,1fr);
+        position: relative !important;
+        left: calc(79% - 200px) !important; 
+        margin:0 !important;
+        margin-top: 15vh !important;
+    }
+    .css-h93ljk-MuiTypography-root {
+        font-size:0.8rem !important;
+    }
+    .css-10a3tap-MuiCardMedia-root:hover {
+        -webkit-transform: scale(1) !important;
+        -moz-transform: scale(1) !important;
+        -ms-transform: scale(1) !important;
+        transform: scale(1) !important;
+        -o-transform: scale(1) !important;
+    }
+    .css-10a3tap-MuiCardMedia-root {
+        width: 60% !important;
+    }
 }
