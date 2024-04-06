@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/hardware/static/css/main.3b1ae55b.css",
-    "main.js": "/hardware/static/js/main.5b845073.js",
+    "main.css": "/hardware/static/css/main.0fb9fe70.css",
+    "main.js": "/hardware/static/js/main.c3b56d56.js",
     "static/js/592.7ae711f1.chunk.js": "/hardware/static/js/592.7ae711f1.chunk.js",
     "static/media/carrusel1.png": "/hardware/static/media/carrusel1.9039dbd9de7a07e8632a.png",
     "static/media/carrusel2.png": "/hardware/static/media/carrusel2.079d2dd813c63e9bfee3.png",
@@ -56,12 +56,12 @@
     "static/media/pc4.png": "/hardware/static/media/pc4.bfce10371525aa1b1f05.png",
     "static/media/pendrives1.jpg": "/hardware/static/media/pendrives1.5d934eec5f432b53440b.jpg",
     "index.html": "/hardware/index.html",
-    "main.3b1ae55b.css.map": "/hardware/static/css/main.3b1ae55b.css.map",
-    "main.5b845073.js.map": "/hardware/static/js/main.5b845073.js.map",
+    "main.0fb9fe70.css.map": "/hardware/static/css/main.0fb9fe70.css.map",
+    "main.c3b56d56.js.map": "/hardware/static/js/main.c3b56d56.js.map",
     "592.7ae711f1.chunk.js.map": "/hardware/static/js/592.7ae711f1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3b1ae55b.css",
-    "static/js/main.5b845073.js"
+    "static/css/main.0fb9fe70.css",
+    "static/js/main.c3b56d56.js"
   ]
 }
